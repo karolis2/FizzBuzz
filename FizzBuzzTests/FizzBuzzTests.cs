@@ -8,7 +8,7 @@ public class FizzBuzzTests
     [Theory]
     [InlineData(3)]
     [InlineData(6)]
-    [InlineData(1358)]
+    [InlineData(138)]
     [InlineData(513)]
     [InlineData(81)]
 
