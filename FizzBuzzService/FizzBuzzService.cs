@@ -1,4 +1,6 @@
-﻿namespace FizzBuzzService;
+﻿using FizzBuzzService.FizzBuzzEnums;
+
+namespace FizzBuzzService;
 
 public class FizzBuzzService
 {
@@ -11,16 +13,16 @@ public class FizzBuzzService
 
         if (numberIsDivisibleByThree && numberIsDivisibleByFive)
         {
-            result = "FizzBuzz";
+            result = FizzBuzzConstants.FizzBuzz;
         }
         else if (numberIsDivisibleByThree)
         {
             //TODO: add enum or constants.
-            result = "Fizz";
+            result = FizzBuzzConstants.Fizz;
         }
         else if (numberIsDivisibleByFive)
         {
-            result = "Buzz";
+            result = FizzBuzzConstants.Buzz;
         }
 
         return result;
