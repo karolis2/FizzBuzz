@@ -8,7 +8,7 @@ public class FizzBuzzTests
     [Theory]
     [InlineData(3)]
     [InlineData(6)]
-    [InlineData(135)]
+    [InlineData(1358)]
     [InlineData(513)]
     [InlineData(81)]
 
@@ -27,5 +27,17 @@ public class FizzBuzzTests
     public void Should_ReturnBuzz_When_InputIsDivisibleByFive(int integer)
     {
         CheckIfIntegerDivisibleByThreeOrFiveAndReturnResult(integer).Should().Be("Buzz");
+    }
+
+    [Theory]
+    [InlineData(15)]
+    [InlineData(30)]
+    [InlineData(45)]
+    [InlineData(90)]
+    [InlineData(105)]
+
+    public void Should_ReturnFizzBuzz_When_InputIsDivisibleByFive_And_DivisibleByThree(int integer)
+    {
+        CheckIfIntegerDivisibleByThreeOrFiveAndReturnResult(integer).Should().Be("FizzBuzz");
     }
 }
