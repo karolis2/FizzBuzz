@@ -1,5 +1,5 @@
 
-# Project Title
+# FizzBuzz
 
 This a simple FizzBuzz application.
 
