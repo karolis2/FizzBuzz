@@ -9,21 +9,21 @@ public class FizzBuzzService
         var numberIsDivisibleByThree = integer % 3 == 0;
         var numberIsDivisibleByFive = integer % 5 == 0;
 
-        var result = integer.ToString();
-
         if (numberIsDivisibleByThree && numberIsDivisibleByFive)
         {
-            result = FizzBuzzConstants.FizzBuzz;
-        }
-        else if (numberIsDivisibleByThree)
-        {
-            result = FizzBuzzConstants.Fizz;
-        }
-        else if (numberIsDivisibleByFive)
-        {
-            result = FizzBuzzConstants.Buzz;
+            return FizzBuzzConstants.FizzBuzz;
         }
 
-        return result;
+        if (numberIsDivisibleByThree)
+        {
+            return FizzBuzzConstants.Fizz;
+        }
+
+        if (numberIsDivisibleByFive)
+        {
+            return FizzBuzzConstants.Buzz;
+        }
+
+        return integer.ToString();
     }
 }
