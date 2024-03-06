@@ -7,7 +7,8 @@ public class FizzBuzzService
         var numberIsDivisibleByThree = integer % 3 == 0;
         var numberIsDivisibleByFive = integer % 5 == 0;
 
-        var result = string.Empty;
+        var result = integer.ToString();
+
         if (numberIsDivisibleByThree && numberIsDivisibleByFive)
         {
             result = "FizzBuzz";
