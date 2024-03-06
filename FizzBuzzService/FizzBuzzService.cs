@@ -8,8 +8,11 @@ public class FizzBuzzService
         var numberIsDivisibleByFive = integer % 5 == 0;
 
         var result = string.Empty;
-
-        if (numberIsDivisibleByThree)
+        if (numberIsDivisibleByThree && numberIsDivisibleByFive)
+        {
+            result = "FizzBuzz";
+        }
+        else if (numberIsDivisibleByThree)
         {
             //TODO: add enum or constants.
             result = "Fizz";
