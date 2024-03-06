@@ -40,4 +40,16 @@ public class FizzBuzzTests
     {
         CheckIfIntegerDivisibleByThreeOrFiveAndReturnResult(integer).Should().Be("FizzBuzz");
     }
+
+    [Theory]
+    [InlineData(2)]
+    [InlineData(19)]
+    [InlineData(22)]
+    [InlineData(101)]
+    [InlineData(904)]
+
+    public void Should_ReturnInput_When_InputIsNotDivisibleByFive_And_IsNotDivisibleByThree(int integer)
+    {
+        CheckIfIntegerDivisibleByThreeOrFiveAndReturnResult(integer).Should().Be(integer.ToString());
+    }
 }
