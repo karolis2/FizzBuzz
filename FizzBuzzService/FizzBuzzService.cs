@@ -17,7 +17,6 @@ public class FizzBuzzService
         }
         else if (numberIsDivisibleByThree)
         {
-            //TODO: add enum or constants.
             result = FizzBuzzConstants.Fizz;
         }
         else if (numberIsDivisibleByFive)
