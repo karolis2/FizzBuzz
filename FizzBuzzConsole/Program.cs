@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using FizzBuzzConsole;
+
+Console.WriteLine("Let's run Fizz Buzz!");
+
+ApplicationProcessor.ExecuteRangeOfIntegers(100);

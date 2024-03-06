@@ -2,7 +2,7 @@
 
 namespace FizzBuzzService;
 
-public class FizzBuzzService
+public static class FizzBuzzService
 {
     public static string CheckIfIntegerDivisibleByThreeOrFiveAndReturnResult(int integer)
     {
